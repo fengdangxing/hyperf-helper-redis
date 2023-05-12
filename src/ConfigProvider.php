@@ -10,9 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Fengdangxing\HyperfNacos;
-
-use Fengdangxing\HyperfNacos\Controller\NacosController;
+namespace Fengdangxing\HyperfRedis;
 
 class ConfigProvider
 {
@@ -27,8 +25,7 @@ class ConfigProvider
                 ],
             ],
             'dependencies' => [
-                OperateNacos::class => OperateNacos::class,
-                NacosController::class => NacosController::class,
+                HyperfRedis::class => HyperfRedis::class,
             ],
         ];
     }
