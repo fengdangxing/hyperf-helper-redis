@@ -3,12 +3,14 @@
 namespace Fengdangxing\HyperfRedis;
 
 use Hyperf\Utils\ApplicationContext;
+
 /**
  * @var \Hyperf\Redis\Redis
  */
 class RedisHelper
 {
-    public static $timeout = 7200;
+    public static $timeout = -1;
+
     /**
      * @return \Hyperf\Redis\Redis
      */
