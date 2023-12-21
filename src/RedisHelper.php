@@ -9,7 +9,7 @@ use Hyperf\Utils\ApplicationContext;
  */
 class RedisHelper
 {
-    public static $timeout = -1;
+    public static $timeout = 7200;
 
     /**
      * @return \Hyperf\Redis\Redis
